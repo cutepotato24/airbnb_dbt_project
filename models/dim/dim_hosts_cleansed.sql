@@ -9,12 +9,12 @@ with src_hosts as (
 )
 
 SELECT
-        id as host_id,
-        CASE WHEN 
-            "name" IS NULL THEN 'Anonymous'
-        ELSE "name"
-        END AS host_name,
-        is_superhost,
-        created_date,
-        updated_date
+    id::integer AS host_id,
+    CASE 
+        WHEN name IS NULL THEN 'Anonymous'
+        ELSE name
+    END AS host_name,
+    is_superhost,
+    created_date,
+    updated_date
 FROM src_hosts

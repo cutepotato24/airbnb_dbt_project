@@ -1,0 +1,6 @@
+version: 2
+snapshots:
+  - name: scd_raw_listings
+    description: "Snapshot of Airbnb listings"
+  - name: scd_raw_hosts
+    description: "Snapshot of Airbnb hosts"
